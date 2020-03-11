@@ -16,7 +16,7 @@ with open(cfg.email['file']) as csv_file:
         elif (bake <= '19:00' and bake >= '9:00' and line_count > 0):
             print('Sending to', cfg.email['email'],'...')
             yag.send(
-	  	    to=cfg.email['email'],
+	  	    to=row[0],
 	     	    subject=cfg.email['subject'],
 	    	    contents=cfg.email['body'],
 	 	    )
