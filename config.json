@@ -1,0 +1,12 @@
+{
+    "email":{
+        "subject":"The subject of the email",
+        "body":"root",
+        "email":"senderemail@gmail.com",
+        "passwd":"my-secret-password"
+    },
+    "data":{
+        "file":"name.csv",
+        "timer":100
+    }
+}
