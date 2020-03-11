@@ -1,4 +1,3 @@
-import preprocessing
 email = {'subject': 'The subject of the email',
         'body': 'root',
         'email': 'senderemail@gmail.com',
