@@ -1,0 +1,8 @@
+email:
+    subject: localhost
+    body: root
+    email: email@gmail.com
+    passwd: my secret password
+data:
+    file: name.csv
+    timer: 100
