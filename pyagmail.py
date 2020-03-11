@@ -21,5 +21,5 @@ with open(cfg.email['file']) as csv_file:
 	    	    contents=cfg.email['body'],
 	 	    )
             line_count += 1
-            time.sleep(300)
+            time.sleep(cfg.email['time'])
     print("Process terminated. created", line_count,"rows" )
