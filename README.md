@@ -17,5 +17,7 @@ Usefull resources:
 - https://www.programiz.com/python-programming/time
 - https://martin-thoma.com/configuration-files-in-python/
 
+- https://serverfault.com/questions/41693/best-practices-for-preventing-you-from-looking-like-a-spammer
+
 ## Gmail stats
 - https://www.lifewire.com/how-to-get-certain-email-statistics-in-gmail-1171980
