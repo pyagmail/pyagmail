@@ -1,3 +1,4 @@
+# coding=utf-8
 import yagmail
 import csv
 import time
