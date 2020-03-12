@@ -15,7 +15,7 @@ with open(cfg.email['file']) as csv_file:
             print('Start the script')
             line_count += 1
         elif (bake.tm_hour <= 19 and bake.tm_hour >= 9 and line_count > 0):
-            print('Sending to', cfg.email['email'],'...')
+            print('Sending to ' + cfg.email['email'] + '...')
             yag.send(
 	  	    to=row[0],
 	     	    subject=cfg.email['subject'],
@@ -23,4 +23,4 @@ with open(cfg.email['file']) as csv_file:
 	 	    )
             line_count += 1
             time.sleep(cfg.email['time'])
-    print("Process terminated. created", line_count,"rows" )
+    print("Process terminated. created " + line_count  + " rows" )
