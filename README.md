@@ -2,7 +2,11 @@
 A python script that use gmail and csv file to send email to lists
 
 
-Usefull resources:
+## Used resouces
+
+- https://yagmail.readthedocs.io/en/latest/setup.html#installing-from-pypi
+
+## Usefull resources:
 
 - https://github.com/MicroPyramid/Django-CRM
 - https://realpython.com/python-send-email/
@@ -16,8 +20,10 @@ Usefull resources:
 - https://pypi.org/project/keyring/#installing-and-using-python-keyring-lib
 - https://www.programiz.com/python-programming/time
 - https://martin-thoma.com/configuration-files-in-python/
+- https://realpython.com/python-print/
 
 - https://serverfault.com/questions/41693/best-practices-for-preventing-you-from-looking-like-a-spammer
+- https://realpython.com/python-csv/
 
 ## Gmail stats
 - https://www.lifewire.com/how-to-get-certain-email-statistics-in-gmail-1171980
