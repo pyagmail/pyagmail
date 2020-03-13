@@ -4,7 +4,9 @@ A python script that use gmail and csv file to send email to lists
 ## To remember
 
 - Configuring keyring
-- Set gmail account to operate with in less security apps (gmail option option security)
+- Set google account to operate with in less security apps (google account option option security)
+- Set digital signature to emails in gmail
+- Set autoreply message in gmail to tell users where can contact you
 
 
 ## Used resouces
