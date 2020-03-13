@@ -34,3 +34,7 @@ A python script that use gmail and csv file to send email to lists
 
 ## Gmail stats
 - https://www.lifewire.com/how-to-get-certain-email-statistics-in-gmail-1171980
+
+# To do
+
+- create a requirement.txt file
