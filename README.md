@@ -1,6 +1,11 @@
 # pyagmail
 A python script that use gmail and csv file to send email to lists
 
+## To remember
+
+- Configuring keyring
+- Set gmail account to operate with in less security apps (gmail option option security)
+
 
 ## Used resouces
 
