@@ -22,4 +22,5 @@
 # m h  dom mon dow   command
 
 # THIS CRONJOB RUNS EVERY 1° OF MOUNTH AT 8.30 AM AND CALL A BASH SCRIPT backup.sh IN THE FOLDER /backups/
+
 30 8 1 * * /bin/bash -c "/backups/backup.sh"
