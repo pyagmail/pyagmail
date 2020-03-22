@@ -1,6 +1,5 @@
 # coding=utf-8
 import yagmail
-import csv
 import time
 from datetime import datetime
 # CREATING A FILE WITH THE DAY OF THE BACKUP LIKE 2020-02-10-BACKUPFILENAME.TAR.GZ
