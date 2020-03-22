@@ -70,10 +70,10 @@ with open('immobiliare-local-ch-locarno.csv') as csv_file:
             line_count += 1
             print(bake.tm_hour)            
         elif (bake.tm_hour <= 19 and bake.tm_hour >= 9 and line_count > 0):
-            print('Sending to ' + row[0] + '... line processed: ')
+            print('Sending to ' + row[line_count] + '... line processed: ')
             print(line_count)
             yag.send(
-	  		    to=row[0],
+	  		    to=row[line_count],
 	     	    subject="Scopri come migliorare la prima impressione per la tua azienda e per i tuoi clienti",
 	    	    contents=body,
 	 	    )
