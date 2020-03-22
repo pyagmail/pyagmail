@@ -11,6 +11,7 @@ filename_path= '/backups/' + filename
 sender_mail = "your.unsecured@gmail.com"
 sender_password = "Gmail-Password"
 receiver = "put.receiver@gmail.com" 
+subject = "Your email subject"
 contents = [
   "EMAIL CONTENTS",
   "You can put row in your email body like this",
@@ -22,8 +23,8 @@ yagmail.register(sender_mail, password=sender_password)
 yag = yagmail.SMTP(sender_mail, password=sender_password)
 
 yag.send(
-	to="trendcolorsagl@gmail.com",
-	subject="Il tuo backup DB mensile di fatture-trendcolor-net",
+	to=receiver,
+	subject=subject,
 	contents=contents,
 	attachments=filename_path,
 )
