@@ -1,6 +1,6 @@
-email = {'subject': 'Importanza della prima impressione',
+email = {'subject': 'Your email subject',
 'body': 'testo-virtual.txt',
 'email': 'unsecure.email@gmail.com',
-'passwd': 'email-password',
-'timer': 20,
+'passwd': 'emailpassword',
+'timer': 5,
 'file': 'virtual-email-list.csv'}

@@ -1,34 +1,48 @@
 # coding=utf-8
 import yagmail
 import csv
+import animation
 import time
 import keyring
 import virtualconfig as cfg
 
+@animation.wait('pulse')
+def long_timer():
+    time.sleep(cfg.email['timer'])
+    return
+
+l = open('logo.txt', 'r')
+logo = l.read()
+print(logo)
+l.close()
+time.sleep(2)
+l = open('start.txt', 'r')
+logo = l.read()
+print(logo)
+l.close()
+time.sleep(5)
+print(' ')
+print(' ')
 print('========================================')
-print('=================  TESTO ================')
+print('==============  MAIL BODY ==============')
 print('========================================')
 f = open(cfg.email['body'], 'r')
 content = f.read()
 print(content)
 f.close()
+time.sleep(5)
 print('========================================')
-print('===============  FINE TESTO  ===============')
+print('===============  END BODY ==============')
 print('========================================')
 print(' ')
 print('========================================')
-print('================  DATI DI INVIO  =============')
+print('=============  SENDER DATAS = ==========')
 print('========================================')
-print('Sender email:')
-print(cfg.email['email'])
-print('Password:')
-print(cfg.email['passwd'])
-print('Email subject')
-print(cfg.email['subject'])
-print('Email body')
-print(cfg.email['body'])
-print('csv filename:')
-print(cfg.email['file'])
+print 'Sender email: ' + cfg.email['email']
+print 'Password: ' + cfg.email['passwd']
+print 'Email subject: ' + cfg.email['subject']
+print 'Email body: ' + cfg.email['body']
+print 'csv filename: ' + cfg.email['file']
 print('========================================')
 print('========================================')
 print('========================================')
@@ -39,17 +53,30 @@ with open(cfg.email['file']) as csv_file:
     for row in csv_reader:
 	bake = time.localtime(time.time())
         if line_count == 0:
-            print('Start the script')
+            print(' ')
             line_count += 1
-            print('At time:')
-            print(bake.tm_hour)
+            localtime = time.asctime( time.localtime(time.time()) )
+            print "Starting the script at :", localtime
+            print(' ')
         elif (line_count > 0):
-            print('Sending to: ')
-            print(row[0])
+            print 'Sending to: ' + row[0]
             if line_count != 1:
-                time.sleep(cfg.email['timer'])
+            	long_timer()
             line_count += 1
+            print(' ')
     print('========================================')
-    print("Process terminated. Email sent: ")
     line_count -= 1
-    print ( line_count )
+    print 'Process terminated. Email sent: ' + str(line_count)
+    time.sleep(2)
+    print(' ')
+    print(' ')
+    l = open('end-logo.txt', 'r')
+    logo = l.read()
+    print(logo)
+    l.close()
+    time.sleep(3)
+    print(' ')
+    print(' ')
+    print 'Process terminated. Email sent: ' + str(line_count)
+    print(' ')
+    print(' ')
