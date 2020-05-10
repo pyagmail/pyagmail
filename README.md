@@ -1,6 +1,12 @@
 # pyagmail
 A python script that use gmail and csv file to send email to lists
 
+┏━┓╋╋╋╋╋╋╋╋╋╋╋╋┏┓
+┃╋┣┳┳━┓┏━┳━━┳━┓┣╋┓
+┃┏┫┃┃╋┗┫╋┃┃┃┃╋┗┫┃┗┓
+┗┛┣┓┣━━╋┓┣┻┻┻━━┻┻━┛
+╋╋┗━┛╋╋┗━┛
+
 ## Prerequisites
 You need to allow the sender gmail account to use unsecure app via:
 - https://support.google.com/cloudidentity/answer/6260879?hl=en
