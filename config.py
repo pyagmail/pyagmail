@@ -1,7 +1,6 @@
-email = {'subject': 'The subject of the email',
-        'body': 'root',
-        'email': 'senderemail@gmail.com',
-        'passwd': 'my-secret-password',
+email = {'subject': 'Put here the email subject',
+        'body': 'filename-of-the-body.txt',
+        'email': 'sender.email@gmail.com',
+        'passwd': 'SenderPassword',
         'timer': 100,
-        'file': 'filename.csv'}
-    
+        'file': 'email-list.csv'}
