@@ -21,12 +21,15 @@ The scripts require some pyton packages (pip install package-name):
 
 Firt thing to do is edit the file config.py all entered values must be contained in quotes '' :
 
+
+``` python
 email = {'subject': 'Put here the email subject',
         'body': 'filename-of-the-body.txt',
         'email': 'sender.email@gmail.com',
         'passwd': 'SenderPassword',
         'timer': 100,
         'file': 'email-list.csv'}
+```
 
 ## To remember
 
