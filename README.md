@@ -1,6 +1,20 @@
 # pyagmail
 A python script that use gmail and csv file to send email to lists
 
+## Usage
+
+Works with python 2.7, not tested with python3.
+
+The scripts require some pyton packages (pip install package-name):
+
+- yagmail (and dependencies)
+- keyring (and dependencies, if not work use keyring.alt)
+- time (and dependencies)
+
+### Srart the script
+
+Firt thing to do is edit the file config.py:
+
 ## To remember
 
 - Configuring keyring
