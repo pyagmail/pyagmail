@@ -61,6 +61,7 @@ Some solution to run in background with windows:
 
 ## To Do
 - [ ] Loading ideas...
+- [ ] Made plain and html version of the emails
 - [ ] Set digital signature to emails in gmail
 - [X] Configuring keyring
 - [X] Set google account to operate with in less security apps (google account option option security)
