@@ -60,11 +60,11 @@ Some solution to run in background with windows:
 - https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell
 
 ## To Do
--[ ] Loading ideas...
--[ ] Set digital signature to emails in gmail
--[X] Configuring keyring
--[X] Set google account to operate with in less security apps (google account option option security)
--[X] Set autoreply message in gmail to tell users where can contact you (using gmail account settings to do this)
+- [ ] Loading ideas...
+- [ ] Set digital signature to emails in gmail
+- [X] Configuring keyring
+- [X] Set google account to operate with in less security apps (google account option option security)
+- [X] Set autoreply message in gmail to tell users where can contact you (using gmail account settings to do this)
 
 
 ## Used resouces
