@@ -24,7 +24,6 @@ contents = [
 # END SENDER RECEIVER EMAIL EDITING
 
 # START SEND EMAIL
-yagmail.register(sender_mail, password=sender_password)
 yag = yagmail.SMTP(sender_mail, password=sender_password)
 
 yag.send(

@@ -5,6 +5,10 @@ import time
 import keyring
 import config as cfg
 
+f = open(cfg.email['body'], 'r')
+content = f.read()
+f.close()
+
 yag = yagmail.SMTP(cfg.email['email'], password=cfg.email['passwd'])
 
 with open(cfg.email['file']) as csv_file:
@@ -20,7 +24,7 @@ with open(cfg.email['file']) as csv_file:
             print(row)
             if line_count != 1:
                 time.sleep(cfg.email['timer'])
-            yag.send(to=row[0], subject=cfg.email['subject'], contents=cfg.email['body'], )
+            yag.send(to=row[0], subject=cfg.email['subject'], contents=content, )
             line_count += 1
     print("Process terminated. Email sent: ")
     line_count -= 1
