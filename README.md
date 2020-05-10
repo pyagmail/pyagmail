@@ -19,8 +19,15 @@ The scripts require some pyton packages (pip install package-name):
 
 ### Start the script
 
-Firt thing to do is edit the file config.py all entered values must be contained in quotes '' :
+- Create a email-list.csv file
 
+In this file, will be read the email list to which to send the emails, for each line a different email, the script will scan this file, line by line, and send the emails to each address read. the first line of the file is not read by the script (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .csv extension).
+
+- Create a filename-of-the-body.txt file:
+
+This file contain the body of the email you need to use the right encode, to be read correctly by the python interpreter, in this file, https://github.com/pyagmail/pyagmail/blob/master/string-encoding-python.md there are some reference links and documentation to understand the problem (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .txt extension).
+
+- Edit the file config.py all entered values must be contained in quotes '' (apart timer field, it don't need '') :
 
 ``` python
 email = {'subject': 'Put here the email subject',
@@ -30,6 +37,29 @@ email = {'subject': 'Put here the email subject',
         'timer': 100,
         'file': 'email-list.csv'}
 ```
+
+The timer field is the time expressed in seconds between sending an email and the other, the value 100 is about 2 minutes.
+
+- Run for 1 time the keyring-registration.py file set the same password of your sender email password:
+
+``` bash
+python keyring-registration.py
+```
+This will store into linux keyring system the yagmail autorization to use and run the machine.
+
+- Run the pyagmail.py script to start sending mail:
+
+``` bash
+python pyagmail.py
+```
+
+launching the script you will need to leave the terminal window open to complete it, otherwise it will stop.
+
+Since, depending on the length of the list, the execution of the script may take days, to overcome the problem of keeping the terminal open, if you use linux, you can take advantage of tmux to launch the script in the background:
+- https://github.com/tmux/tmux/wiki
+
+Some solution to run in background with windows:
+- https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell
 
 ## To remember
 
