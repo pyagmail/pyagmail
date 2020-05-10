@@ -1,6 +1,6 @@
-email = {'subject': 'inviare con yagmail',
+email = {'subject': 'Put here the email subject',
 'body': 'testo-virtual.txt',
-'email': 'contatti.trendcolor@gmail.com',
-'passwd': 'Sciroccobianca1983',
+'email': 'sender.email@gmail.com',
+'passwd': 'SenderPassword',
 'timer': 2,
 'file': 'virtual-email-list.csv'}
