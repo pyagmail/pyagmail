@@ -8,7 +8,6 @@ Or setup the script and yagmail to use OAuth2 autorization:
 - https://yagmail.readthedocs.io/en/latest/setup.html#installing-from-pypi
 
 ## Usage
-
 Works with python 2.7, not tested with python3.
 
 The scripts require some pyton packages (pip install package-name):
@@ -18,7 +17,6 @@ The scripts require some pyton packages (pip install package-name):
 - time (and dependencies)
 
 ### Start the script
-
 - Create a email-list.csv file
 
 In this file, will be read the email list to which to send the emails, for each line a different email, the script will scan this file, line by line, and send the emails to each address read. the first line of the file is not read by the script (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .csv extension).
@@ -61,12 +59,12 @@ Since, depending on the length of the list, the execution of the script may take
 Some solution to run in background with windows:
 - https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell
 
-## To remember
-
-- Configuring keyring
-- Set google account to operate with in less security apps (google account option option security)
-- Set digital signature to emails in gmail
-- Set autoreply message in gmail to tell users where can contact you
+## To Do
+-[ ] Loading ideas...
+-[ ] Set digital signature to emails in gmail
+-[X] Configuring keyring
+-[X] Set google account to operate with in less security apps (google account option option security)
+-[X] Set autoreply message in gmail to tell users where can contact you (using gmail account settings to do this)
 
 
 ## Used resouces
