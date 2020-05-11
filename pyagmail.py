@@ -8,6 +8,7 @@ import config as cfg
 
 @animation.wait('pulse')
 def long_timer():
+    print(' ')
     time.sleep(cfg.email['timer'])
     return
 l = open('logo.txt', 'r')
@@ -29,10 +30,10 @@ f = open(cfg.email['body'], 'r')
 content = f.read()
 print(content)
 f.close()
-time.sleep(5)
 print('========================================')
 print('===============  END BODY ==============')
 print('========================================')
+time.sleep(5)
 print(' ')
 print('========================================')
 print('=============  SENDER DATAS = ==========')
@@ -57,9 +58,14 @@ with open(cfg.email['file']) as csv_file:
             line_count += 1
             localtime = time.asctime( time.localtime(time.time()) )
             print "Starting the script at :", localtime
+            print('--------------------')
             print(' ')
         elif (bake.tm_hour <= 18 and bake.tm_hour >= 9 and line_count > 0):
             print 'Sending to: ' + row[0]
+            print(' ')
+            print('--------------')
+            print('Using Tmux? Press: ctrl+b and d to swich to terminal, to restore run: tmux attach')
+            print('--------------')            
             if line_count != 1:
                 long_timer()
             yag.send(to=row[0], subject=cfg.email['subject'], contents=content, )
@@ -76,8 +82,22 @@ with open(cfg.email['file']) as csv_file:
     print(logo)
     l.close()
     time.sleep(3)
+    print('========================================')
+    print('============  SENDER DATA ==============')
+    print('========================================')
+    print 'Sender email: ' + cfg.email['email']
+    print 'Password: ' + cfg.email['passwd']
+    print 'Email subject: ' + cfg.email['subject']
+    print 'Email body: ' + cfg.email['body']
+    print 'csv filename: ' + cfg.email['file']
+    print('========================================')
+    print('========================================')
+    print('========================================')
     print(' ')
     print(' ')
     print 'Process terminated. Email sent: ' + str(line_count)
     print(' ')
+    print('--------------')
+    print('Using Tmux? ctrl+d to close the current session')
+    print('--------------')
     print(' ')

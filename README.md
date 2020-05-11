@@ -70,6 +70,7 @@ launching the script you will need to leave the terminal window open to complete
 
 Since, depending on the length of the list, the execution of the script may take days, to overcome the problem of keeping the terminal open, if you use linux, you can take advantage of tmux to launch the script in the background:
 - https://github.com/tmux/tmux/wiki
+- (Quick usage tutorial)[https://computingforgeeks.com/linux-tmux-cheat-sheet/]
 
 Some solution to run in background with windows:
 - https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell
