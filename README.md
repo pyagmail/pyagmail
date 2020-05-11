@@ -18,14 +18,16 @@ Or setup the script and yagmail to use OAuth2 autorization:
 
 https://yagmail.readthedocs.io/en/latest/setup.html#installing-from-pypi
 
+(maibe) Build [animation package](https://pypi.org/project/animation/)
+
 ## Usage
 Works with python 2.7, not tested with python3.
 
 The scripts require some pyton packages (pip install package-name):
 
-- yagmail (and dependencies)
-- keyring (and dependencies, if not work use keyring.alt)
-- time (and dependencies)
+- [yagmail](https://pypi.org/project/yagmail/) (and dependencies)
+- [keyrings](https://pypi.org/project/keyring/) (and dependencies, if not work use [keyrings.alt](https://pypi.org/project/keyrings.alt/))
+- [time](https://pypi.org/project/time/) (and dependencies)
 
 ### Start the script
 - Create a email-list.csv file
@@ -38,7 +40,7 @@ This file contain the body of the email you need to use the right encode.
 
 For me, the solution of using a txt file worked well, in the sense that for special characters I didn't have to make any changes for the encoding problems, the example txt file is the original one, without modifications, that I used for send emails, I use the plain text format and not the HTML format, which I have not tested yet.
 
-This file contain the body of the email you need to use the right encode, to be read correctly by the python interpreter, in this file, https://github.com/pyagmail/pyagmail/blob/master/string-encoding-python.md there are some reference links and documentation to understand the problem (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .txt extension).
+This file contain the body of the email you need to use the right encode, to be read correctly by the python interpreter, [in this file](https://github.com/pyagmail/pyagmail/blob/master/string-encoding-python.md) there are some reference links and documentation to understand the problem (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .txt extension).
 
 - Edit the file config.py all entered values must be contained in quotes '' (apart timer field, it don't need '') :
 
@@ -69,11 +71,11 @@ python pyagmail.py
 launching the script you will need to leave the terminal window open to complete it, otherwise it will stop.
 
 Since, depending on the length of the list, the execution of the script may take days, to overcome the problem of keeping the terminal open, if you use linux, you can take advantage of tmux to launch the script in the background:
-- https://github.com/tmux/tmux/wiki
-- (Quick usage tutorial)[https://computingforgeeks.com/linux-tmux-cheat-sheet/]
+- [Tmux wiki](https://github.com/tmux/tmux/wiki)
+- [Quick usage tutorial](https://computingforgeeks.com/linux-tmux-cheat-sheet/)
 
 Some solution to run in background with windows:
-- https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell
+- [Tmux windows alternative](https://superuser.com/questions/408874/tmux-screen-alternative-for-powershell)
 
 ## To Do
 - [ ] Loading ideas...
