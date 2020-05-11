@@ -34,6 +34,10 @@ In this file, will be read the email list to which to send the emails, for each 
 
 - Create a filename-of-the-body.txt file:
 
+This file contain the body of the email you need to use the right encode.
+
+For me, the solution of using a txt file worked well, in the sense that for special characters I didn't have to make any changes for the encoding problems, the example txt file is the original one, without modifications, that I used for send emails, I use the plain text format and not the HTML format, which I have not tested yet.
+
 This file contain the body of the email you need to use the right encode, to be read correctly by the python interpreter, in this file, https://github.com/pyagmail/pyagmail/blob/master/string-encoding-python.md there are some reference links and documentation to understand the problem (you can name as you wish, remember to put the same name into config.py file and put in the same path of the project and use .txt extension).
 
 - Edit the file config.py all entered values must be contained in quotes '' (apart timer field, it don't need '') :
