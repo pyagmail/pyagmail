@@ -12,7 +12,11 @@ A python script that use gmail and csv file to send email to lists
 ## Prerequisites
 You need to allow the sender gmail account to use unsecure app via:
 
-https://support.google.com/cloudidentity/answer/6260879?hl=en Or setup the script and yagmail to use OAuth2 autorization: https://yagmail.readthedocs.io/en/latest/setup.html#installing-from-pypi
+https://support.google.com/cloudidentity/answer/6260879?hl=en 
+
+Or setup the script and yagmail to use OAuth2 autorization: 
+
+https://yagmail.readthedocs.io/en/latest/setup.html#installing-from-pypi
 
 ## Usage
 Works with python 2.7, not tested with python3.
