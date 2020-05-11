@@ -79,6 +79,7 @@ Some solution to run in background with windows:
 
 ## To Do
 - [ ] Loading ideas...
+- [ ] Build [setup](https://docs.python.org/3/distutils/setupscript.html) file
 - [ ] Implementing OAut2 for gmail secure apps
 - [ ] Made plain and html version of the emails
 - [ ] Set digital signature to emails in gmail
@@ -116,7 +117,7 @@ Some solution to run in background with windows:
 
 # To do
 
-- create a requirement.txt file
+- [ ] Loading...
 
 ```
 ┏━━┳┓╋╋╋╋╋╋┏┓┏━┓
