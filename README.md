@@ -76,6 +76,7 @@ Some solution to run in background with windows:
 
 ## To Do
 - [ ] Loading ideas...
+- [ ] Implementing OAut2 for gmail secure apps
 - [ ] Made plain and html version of the emails
 - [ ] Set digital signature to emails in gmail
 - [X] Adding animation when script is runnig
