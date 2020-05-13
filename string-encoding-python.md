@@ -24,3 +24,11 @@ text
 -[X] https://blog.mailtrap.io/sending-emails-in-python-tutorial-with-code-examples/#Sending_HTML_email
 -[X] https://docs.python.it/html/ref/strings.html
 
+## Other tutorials
+
+- https://github.com/kootenpv/yagmail
+- http://blog.macuyiko.com/post/2016/how-to-send-html-mails-with-oauth2-and-gmail-in-python.html
+- https://blog.mailtrap.io/yagmail-tutorial/#Sending_Emails_to_Multiple_Recipients
+- https://realpython.com/python-logging/
+- https://oliverleach.wordpress.com/2016/06/15/creating-multiple-log-files-using-python-logging-library/
+- 
