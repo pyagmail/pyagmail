@@ -1,6 +1,7 @@
-email = {'subject': 'Importanza della prima impressione',
+email = {'subject': 'Your email subject',
         'body': 'testo.txt',
-        'email': 'contatti.trendcolor@gmail.com',
-        'passwd': 'Sciroccobianca1983',
+        'email': 'unsecure.email@gmail.com',
+        'passwd': 'passwordOfEmail',
         'timer': 100,
-        'file': 'email-list.csv'}
+        'file': 'email-list.csv',
+        'log_email': 'log.email.receiver@gmail.com'}
