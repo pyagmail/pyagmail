@@ -50,7 +50,8 @@ email = {'subject': 'Put here the email subject',
         'email': 'sender.email@gmail.com',
         'passwd': 'SenderPassword',
         'timer': 100,
-        'file': 'email-list.csv'}
+        'file': 'email-list.csv',
+        'log_email': 'log.email.receiver@gmail.com'}
 ```
 
 The timer field is the time expressed in seconds between sending an email and the other, the value 100 is about 2 minutes.
