@@ -1,4 +1,4 @@
-root@HP-Pavilion:/trendcolor/python-projects/email-sender# python pyagmail.py 
+root@pyagmail:/python-scripts/pyagmail# python pyagmail.py 
 
 ┏━┓╋╋╋╋╋╋╋╋╋╋╋╋┏┓
 ┃╋┣┳┳━┓┏━┳━━┳━┓┣╋┓
