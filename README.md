@@ -28,6 +28,7 @@ The scripts require some pyton packages (pip install package-name):
 - [yagmail](https://pypi.org/project/yagmail/) (and dependencies)
 - [keyrings](https://pypi.org/project/keyring/) (and dependencies, if not work use [keyrings.alt](https://pypi.org/project/keyrings.alt/))
 - [time](https://pypi.org/project/time/) (and dependencies)
+- [animation](https://pypi.org/project/animation/) need to be cloned in the pyagmail folder
 
 ### Start the script
 - Create a email-list.csv file
